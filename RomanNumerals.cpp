@@ -19,6 +19,7 @@ int main(void) {
 		cout << "Enter Roman number or Q to quit: ";
 		getline(cin, input);
 
+		// So user doesn't have to keep exiting the program
 		if (input == "Q") {
 			break;
 		}
@@ -43,6 +44,7 @@ int romanCharValue(char r) {
 	case 'D': value = 500;	break;
 	case 'M': value = 1000; break;
 	}
+
 	return value;
 }
 
@@ -63,4 +65,5 @@ int convertRomanToInt(string s) {
 	}
 
 	return total;
+
 }
